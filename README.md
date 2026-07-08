@@ -1,2 +1,1 @@
-# opencompass-eval-tools
-Tools and notes for OpenCompass and VLMEvalKit evaluation tasks
+This repository is a personal practice project for learning and testing LLM evaluation workflows.
