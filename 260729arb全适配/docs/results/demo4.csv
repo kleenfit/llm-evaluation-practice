@@ -1,0 +1,13 @@
+dataset,version,metric,mode,qwen3.5-35b-a3b
+arb_demo_numerical,be91b9,accuracy,gen,86.67
+arb_demo_numerical,be91b9,no_delimiter_rate,gen,0.00
+arb_demo_numerical,be91b9,parse_fail_rate,gen,0.00
+arb_demo_law_mc,8bb34c,accuracy,gen,73.33
+arb_demo_law_mc,8bb34c,no_delimiter_rate,gen,0.00
+arb_demo_law_mc,8bb34c,parse_fail_rate,gen,0.00
+arb_demo_symbolic,dc066e,accuracy,gen,66.67
+arb_demo_symbolic,dc066e,manual_review_rate,gen,33.33
+arb_demo_symbolic,dc066e,no_delimiter_rate,gen,0.00
+arb_demo_prooflike,21b125,accuracy,gen,78.00
+arb_demo_prooflike,21b125,avg_rubric_score,gen,7.80
+arb_demo_prooflike,21b125,judge_fail_rate,gen,0.00
