@@ -105,7 +105,7 @@ JUDGE_CFG = dict(
     path='deepseek-v4-flash',
     key_env='QIANFAN_JUDGE_API_KEY',
     temperature=0.0,
-    max_tokens=4096,
+    max_tokens=16384,
     concurrency=2,               # 多 eval 子进程共打一个端点，429 教训
     retry=3,
     cache_path='./outputs/arb_proof_judge_cache.json',
@@ -136,7 +136,7 @@ datasets = [
             ),
             retriever=dict(type=ZeroRetriever),
             inferencer=dict(type=GenInferencer,
-                            max_out_len=24576,   # 终版口径：16384 下该 subset 有真截断
+                            max_out_len=24576,
                             batch_size=BATCH_SIZE),
         ),
         eval_cfg=dict(
@@ -168,7 +168,7 @@ datasets = [
             ),
             retriever=dict(type=ZeroRetriever),
             inferencer=dict(type=GenInferencer,
-                            max_out_len=16384,
+                            max_out_len=24576,
                             batch_size=BATCH_SIZE),
         ),
         eval_cfg=dict(
@@ -201,7 +201,7 @@ datasets = [
             ),
             retriever=dict(type=ZeroRetriever),
             inferencer=dict(type=GenInferencer,
-                            max_out_len=24576,   # 终版口径：16384 下该 subset 有真截断
+                            max_out_len=24576,
                             batch_size=BATCH_SIZE),
         ),
         eval_cfg=dict(
@@ -233,7 +233,7 @@ datasets = [
             ),
             retriever=dict(type=ZeroRetriever),
             inferencer=dict(type=GenInferencer,
-                            max_out_len=16384,
+                            max_out_len=24576,
                             batch_size=BATCH_SIZE),
         ),
         eval_cfg=dict(
@@ -265,7 +265,7 @@ datasets = [
             ),
             retriever=dict(type=ZeroRetriever),
             inferencer=dict(type=GenInferencer,
-                            max_out_len=16384,
+                            max_out_len=24576,
                             batch_size=BATCH_SIZE),
         ),
         eval_cfg=dict(
@@ -297,7 +297,7 @@ datasets = [
             ),
             retriever=dict(type=ZeroRetriever),
             inferencer=dict(type=GenInferencer,
-                            max_out_len=16384,
+                            max_out_len=24576,
                             batch_size=BATCH_SIZE),
         ),
         eval_cfg=dict(
@@ -330,7 +330,7 @@ datasets = [
             ),
             retriever=dict(type=ZeroRetriever),
             inferencer=dict(type=GenInferencer,
-                            max_out_len=16384,
+                            max_out_len=24576,
                             batch_size=BATCH_SIZE),
         ),
         eval_cfg=dict(
@@ -362,7 +362,7 @@ datasets = [
             ),
             retriever=dict(type=ZeroRetriever),
             inferencer=dict(type=GenInferencer,
-                            max_out_len=16384,
+                            max_out_len=24576,
                             batch_size=BATCH_SIZE),
         ),
         eval_cfg=dict(
@@ -395,7 +395,7 @@ datasets = [
             ),
             retriever=dict(type=ZeroRetriever),
             inferencer=dict(type=GenInferencer,
-                            max_out_len=16384,
+                            max_out_len=24576,
                             batch_size=BATCH_SIZE),
         ),
         eval_cfg=dict(
@@ -419,7 +419,7 @@ _COMMON = dict(
     openai_api_base='https://qianfan.baidubce.com/v2',
     meta_template=qianfan_meta_template,
     max_seq_len=32768,
-    max_out_len=16384,
+    max_out_len=24576,
     batch_size=BATCH_SIZE,
     query_per_second=2,
     retry=5,

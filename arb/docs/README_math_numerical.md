@@ -1,3 +1,7 @@
+> **归档说明 / Archive note（2026-09-11）**：本文是 2026-07-29 第一条交付「ARB Math Numerical 复现」（原目录 `260729arb_numerical复现/`，tag `260729-arb-numerical`）的原 README，因判分实现、指标含义、关键发现、数据集 API 路由、BibTeX 等内容未被全适配版 README 覆盖而整体保留。
+> 文中「目录结构」「部署位置」描述的是当时的目录布局；现在的代码以 [`../`](../)（`arb.py`、`eval_arb_qianfan.py`、`tools/download_arb.py`）为准，三轮结果 CSV 在 [`results/var_run1-3.csv`](results/)（与原 `run1-3.csv` 逐字节相同）。
+> This is the original README of the 2026-07-29 Math Numerical delivery (archived as-is, Chinese only), kept because its content is not covered by the full-adaptation README; file paths refer to the original layout — the current code lives one level up.
+
 # ARB Math Numerical × OpenCompass
 
 把 ARB（Advanced Reasoning Benchmark, [arXiv:2307.13692](https://arxiv.org/abs/2307.13692)）的

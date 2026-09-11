@@ -217,3 +217,18 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 .DS_Store
+
+# ---- 评测数据与产物 / evaluation data & artefacts (2026-09-11) ----
+# 数据集、预测结果、评测输出一律不入库；已跟踪的历史交付文件不受影响（需要时用 git add -f）。
+# Datasets, prediction dumps and evaluation outputs never go into git; files already tracked
+# as part of a past delivery are unaffected (use `git add -f` when a new summary must be kept).
+*.tsv
+*.xlsx
+*.csv
+outputs/
+预测结果/
+data/
+status.json
+*.bak
+.env
+.env.*
